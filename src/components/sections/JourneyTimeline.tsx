@@ -2,45 +2,49 @@
 
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Star, Zap } from 'lucide-react';
+import { useI18n, Trans, translations } from '@/hooks/useI18n';
+import { useMemo } from 'react';
 
 export default function JourneyTimeline() {
-  const experiences = [
+  const { t } = useI18n();
+
+  const experiences = useMemo(() => [
     {
       year: '2010 - 2012',
-      title: 'Menor Aprendiz',
+      title: t('exp1Title'),
       company: 'AOC',
-      description: 'Início da jornada aos 14 anos, aprendendo a base da disciplina e processos em uma grande corporação.',
+      description: t('exp1Desc'),
       icon: <GraduationCap className="h-5 w-5" />,
       color: 'bg-blue-100 text-blue-600',
     },
     {
       year: '2012 - 2014',
-      title: 'Estágio Frontend',
+      title: t('exp2Title'),
       company: 'Zellar (Incubada GTP)',
-      description: 'Primeiro contato real com desenvolvimento. De estagiário a efetivado, construindo as bases técnicas.',
+      description: t('exp2Desc'),
       icon: <Zap className="h-5 w-5" />,
       color: 'bg-rose-100 text-rose-600',
     },
     {
       year: '2015 - 2018',
-      title: 'Desenvolvedor Junior',
+      title: t('exp3Title'),
       company: 'Acesso Soluções de Pagamentos',
-      description: 'Foco total em sistemas de pagamento e escalabilidade, consolidando conhecimentos em ecossistemas React.',
+      description: t('exp3Desc'),
       icon: <Briefcase className="h-5 w-5" />,
       color: 'bg-slate-100 text-slate-600',
     },
     {
       year: 'Hoje',
-      title: 'Senior Frontend Developer',
+      title: t('exp4Title'),
       company: 'Méliuz',
-      description: 'Liderando iniciativas de frontend em uma das maiores empresas de tecnologia do Brasil.',
+      description: t('exp4Desc'),
       icon: <Star className="h-5 w-5" />,
       color: 'bg-yellow-100 text-yellow-600',
     },
-  ];
+  ], [t]);
 
   return (
-    <section id="work" className="py-24 px-6 relative">
+    <section id="projects" className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col gap-16">
           <motion.div
@@ -49,9 +53,11 @@ export default function JourneyTimeline() {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center gap-4"
           >
-            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-400 font-bold">Carreira</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-400 font-bold">
+              <Trans i18nKey="journeyLabel" />
+            </span>
             <h2 className="text-5xl font-bold tracking-tighter sm:text-7xl">
-              Minha <span className="text-rose-400">Jornada</span>
+              <Trans i18nKey="journeyTitle1" /> <span className="text-rose-400"><Trans i18nKey="journeyTitle2" /></span>
             </h2>
           </motion.div>
 
@@ -62,7 +68,7 @@ export default function JourneyTimeline() {
             <div className="flex flex-col gap-12">
               {experiences.map((exp, index) => (
                 <motion.div
-                  key={exp.company}
+                  key={exp.title}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -79,7 +85,9 @@ export default function JourneyTimeline() {
                           {exp.icon}
                         </div>
                         <div>
-                          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400">{exp.year}</p>
+                          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+                            {exp.year === 'Hoje' ? t('todayLabel') : exp.year}
+                          </p>
                           <h4 className="text-xl font-bold">{exp.title}</h4>
                         </div>
                       </div>

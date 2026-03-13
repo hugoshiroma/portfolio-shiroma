@@ -27,6 +27,13 @@ Este é o portfólio pessoal do **Hugo Gaio Shiroma**, um Desenvolvedor Frontend
 - **TypeScript**: Tipagem rigorosa em todos os componentes e utilitários.
 - **Yarn**: Gerenciador de pacotes padrão.
 
+### 2. Engenharia de Software (Mandatório)
+- **SOLID**: Aplicar os princípios SOLID em toda a estrutura de componentes e hooks.
+- **Reaproveitamento**: Componentizar elementos repetitivos e evitar lógica duplicada (DRY).
+- **Otimização de DOM**: Minimizar re-renderizações desnecessárias e manter a árvore do DOM enxuta.
+- **Surgical Updates**: Não refatorar o que já funciona se não for solicitado.
+- **Performance**: Manter o Lighthouse acima de 90 em acessibilidade e performance.
+
 ### 2. Estilização (Tailwind CSS v4)
 - **Zero Config**: O projeto utiliza **Tailwind v4**. As configurações de tema estão no `src/app/globals.css` usando `@theme`.
 - **Importante**: No v4, variações como `selection:` no `@apply` dentro do CSS podem causar erros. Prefira usar classes utilitárias diretamente nos componentes.

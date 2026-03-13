@@ -1,7 +1,8 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { ArrowDownRight } from 'lucide-react';
+import { ArrowDownRight, Linkedin, Mail } from 'lucide-react';
+import { Trans } from '@/hooks/useI18n';
 
 export default function Hero() {
   const containerVariants: Variants = {
@@ -28,7 +29,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           variants={containerVariants}
@@ -41,8 +42,8 @@ export default function Hero() {
               variants={itemVariants}
               className="text-7xl font-bold uppercase tracking-tighter sm:text-9xl"
             >
-              Hugo Gaio <br />
-              <span className="text-rose-400">Shiroma</span>
+              <Trans i18nKey="heroTitle" /> <br />
+              <span className="text-rose-400"><Trans i18nKey="heroSubtitle" /></span>
             </motion.h1>
           </div>
 
@@ -51,19 +52,38 @@ export default function Hero() {
               variants={itemVariants}
               className="text-lg text-zinc-400 sm:text-xl md:text-2xl leading-relaxed"
             >
-              Specializing in building exceptional digital experiences. 
-              Currently crafting the future of the web with React and Next.js.
+              <Trans i18nKey="heroDesc" />
             </motion.p>
           </div>
 
-          <motion.div variants={itemVariants} className="mt-4 flex items-center gap-6">
-            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-white transition-colors hover:text-zinc-400">
-              View Projects
+          <motion.div variants={itemVariants} className="mt-4 flex flex-wrap items-center gap-6">
+            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 transition-colors hover:text-zinc-300">
+              <Trans i18nKey="viewProjects" />
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
             </button>
-            <div className="h-px w-20 bg-zinc-800" />
+
+            <div className="flex items-center gap-4 border-l border-zinc-800 pl-6">
+              <a 
+                href="https://www.linkedin.com/in/hugo-gaio-shiroma-ab342215b/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-zinc-500 transition-colors hover:text-blue-400"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="mailto:hugo.shiroma@gmail.com" 
+                className="text-zinc-500 transition-colors hover:text-rose-400"
+                title="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
+
+            <div className="hidden h-px w-20 bg-zinc-800 md:block" />
             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-600">
-              Senior Frontend Engineer
+              <Trans i18nKey="role" />
             </span>
           </motion.div>
         </motion.div>
