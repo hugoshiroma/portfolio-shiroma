@@ -6,11 +6,18 @@ import { motion, useSpring } from 'framer-motion';
 export default function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const cursorX = useSpring(mousePosition.x, { stiffness: 500, damping: 28 });
   const cursorY = useSpring(mousePosition.y, { stiffness: 500, damping: 28 });
 
   useEffect(() => {
+    // Detect if the device has a mouse/pointer (avoid running on touch devices)
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+
+    setIsVisible(true);
+
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -29,14 +36,16 @@ export default function CustomCursor() {
       }
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseover', handleMouseOver);
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    window.addEventListener('mouseover', handleMouseOver, { passive: true });
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseover', handleMouseOver);
     };
   }, []);
+
+  if (!isVisible) return null;
 
   return (
     <motion.div
@@ -48,8 +57,8 @@ export default function CustomCursor() {
         y: '-50%',
         scale: isHovering ? 2.5 : 1,
         backgroundColor: isHovering ? 'white' : 'transparent',
+        willChange: 'transform',
       }}
-      transition={{ type: 'spring', stiffness: 250, damping: 20, mass: 0.5 }}
     />
   );
 }

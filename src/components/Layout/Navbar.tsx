@@ -54,7 +54,7 @@ export default function Navbar() {
       transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
       className="fixed top-0 left-0 z-50 w-full px-4 py-6 md:px-6 md:py-8"
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 rounded-full border border-white/40 bg-white/40 px-6 py-3 backdrop-blur-xl shadow-lg ring-1 ring-black/5 md:grid md:grid-cols-3 md:px-8 md:py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 rounded-full border border-white/40 bg-white/40 px-6 py-3 backdrop-blur-md shadow-lg ring-1 ring-black/5 md:grid md:grid-cols-3 md:px-8 md:py-4 md:backdrop-blur-xl">
         {/* Left: Brand/Logo (Hidden on mobile, empty on desktop for centering) */}
         <div className="hidden md:block" />
 
@@ -73,15 +73,8 @@ export default function Navbar() {
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center justify-end gap-3 md:gap-6">
+        <div className="flex items-center justify-end">
           <LanguageSwitcher />
-          
-          <button 
-            onClick={handleContactClick}
-            className="hidden overflow-hidden rounded-full bg-zinc-900 px-6 py-2.5 text-[10px] font-medium uppercase tracking-widest text-white transition-all duration-300 hover:bg-zinc-800 hover:shadow-md active:scale-95 sm:block"
-          >
-            <Trans i18nKey="navContact" />
-          </button>
         </div>
       </nav>
     </motion.header>

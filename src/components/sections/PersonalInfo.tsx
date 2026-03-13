@@ -28,7 +28,7 @@ export default function PersonalInfo() {
     { label: t('statusLabel'), value: t('statusValue'), icon: <Heart className="h-4 w-4 text-rose-300" /> },
     { 
       label: t('linkedinLabel'), 
-      value: 'hugo-gaio-shiroma', 
+      value: 'Hugo Gaio Shiroma', 
       icon: <Linkedin className="h-4 w-4 text-blue-400" />,
       href: 'https://www.linkedin.com/in/hugo-gaio-shiroma-ab342215b/'
     },

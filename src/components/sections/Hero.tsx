@@ -29,8 +29,8 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
-      <div className="container mx-auto max-w-7xl">
+    <section id="home" className="relative flex min-h-screen items-center justify-center px-6 pt-20">
+      <div className="container mx-auto max-w-7xl relative">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
 
           <motion.div variants={itemVariants} className="mt-4 flex flex-wrap items-center gap-6">
-            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-400 transition-colors hover:text-zinc-300">
+            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-white transition-colors hover:text-zinc-400">
               <Trans i18nKey="viewProjects" />
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
             </button>
@@ -89,8 +89,8 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Decorative background element */}
-      <div className="absolute -bottom-20 -right-20 -z-10 h-96 w-96 rounded-full bg-zinc-900/50 blur-[120px]" />
+      {/* Decorative background element - Using fixed size and no blur on mobile if needed */}
+      <div className="absolute -bottom-20 -right-20 -z-10 h-96 w-96 rounded-full bg-zinc-900/10 blur-[120px] pointer-events-none md:bg-zinc-900/50" />
     </section>
   );
 }
