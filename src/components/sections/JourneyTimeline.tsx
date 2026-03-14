@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Star, Zap } from 'lucide-react';
-import { useI18n, Trans, translations } from '@/hooks/useI18n';
+import { useI18n, Trans } from '@/hooks/useI18n';
 import { useMemo } from 'react';
 
 export default function JourneyTimeline() {

@@ -33,19 +33,12 @@ const LanguageSwitcher = () => {
 };
 
 export default function Navbar() {
-  const { t } = useI18n();
   const navItems = [
-    { key: 'navHome', href: '#home' },
-    { key: 'navAbout', href: '#about' },
-    { key: 'navJourney', href: '#journey' },
+    { key: 'navHome', href: '/#home' },
+    { key: 'navAbout', href: '/#about' },
+    { key: 'navJourney', href: '/#journey' },
+    { key: 'navProjects', href: '/projects' },
   ] as const;
-
-  const handleContactClick = () => {
-    const phoneNumber = '5511996731201';
-    const message = t('whatsappMsg');
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
-  };
 
   return (
     <motion.header

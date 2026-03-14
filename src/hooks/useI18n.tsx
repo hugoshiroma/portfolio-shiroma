@@ -89,6 +89,70 @@ export const translations: Translations = {
     en: 'Hello! I saw your online portfolio and would like to get in touch.',
     pt: 'Olá! Vi seu portfólio online e gostaria de entrar em contato.'
   },
+
+  // Projects
+  navProjects: { en: 'Projects', pt: 'Projetos' },
+  projectsLabel: { en: 'Showcase', pt: 'Portfólio' },
+  projectsTitle1: { en: 'Personal', pt: 'Projetos' },
+  projectsTitle2: { en: 'Projects', pt: 'Individuais' },
+  projectsSubtitle: {
+    en: 'A collection of side projects where I experiment with new technologies and solve real-world problems.',
+    pt: 'Uma coleção de projetos paralelos onde experimento novas tecnologias e resolvo problemas reais.',
+  },
+  featuredCase: { en: 'Featured Case Study', pt: 'Estudo de Caso em Destaque' },
+  liveDemo: { en: 'Live Demo', pt: 'Demonstração' },
+  challengeSolution: { en: 'The Challenge & The Solution', pt: 'O Desafio e a Solução' },
+  repoPos: { en: 'PoS App', pt: 'App PDV' },
+  repoGateway: { en: 'Gateway', pt: 'Gateway' },
+  repoService: { en: 'Medusa Service', pt: 'Serviço Medusa' },
+  comingSoon: { en: 'More projects coming soon...', pt: 'Mais projetos em breve...' },
+  stayTuned: { 
+    en: "I'm always working on something new. Stay tuned!", 
+    pt: 'Estou sempre trabalhando em algo novo. Fique ligado!' 
+  },
+
+  // Bar do Haules
+  haulesTitle: { en: 'Bar do Haules', pt: 'Bar do Haules' },
+  haulesTagline: { 
+    en: 'A complete ecosystem for a local bar, from playlist management to a custom PoS system.', 
+    pt: 'Um ecossistema completo para um bar local, desde a gestão de playlists até um sistema de PDV próprio.' 
+  },
+  haulesDesc: {
+    en: 'What started as a simple landing page evolved into a complex system. It features a collaborative Spotify playlist where customers can add songs, a coupon management system powered by MedusaJS with automated sync across the user base, and a Raspberry Pi hardware hack for automated audio playback.',
+    pt: 'O que começou como uma simples landing page evoluiu para um sistema complexo. Possui uma playlist colaborativa do Spotify onde os clientes podem adicionar músicas, um sistema de gestão de cupons via MedusaJS com sincronização automatizada para toda a base de usuários, e um hack de hardware com Raspberry Pi para reprodução automatizada de áudio.'
+  },
+  
+  // Tech Highlights
+  techSupabase: { en: 'Supabase Edge Functions', pt: 'Supabase Edge Functions' },
+  techSupabaseDesc: { 
+    en: 'Handles user registration, search, and collaborative playlist logic with per-user thresholds.', 
+    pt: 'Gerencia cadastro de usuários, busca e lógica de playlist colaborativa com limites por usuário.' 
+  },
+  spotifyPlaylist: { en: 'Collaborative Spotify', pt: 'Spotify Colaborativo' },
+  spotifyPlaylistDesc: { 
+    en: 'Real-time collaborative playlist where users can add songs and vote, integrated directly with the bar sound system.', 
+    pt: 'Playlist colaborativa em tempo real onde usuários adicionam músicas, integrada ao som do bar.' 
+  },
+  techMedusa: { en: 'MedusaJS & Coupons', pt: 'MedusaJS & Cupons' },
+  techMedusaDesc: { 
+    en: 'Advanced coupon management with event listeners that sync discounts across the entire base in real-time.', 
+    pt: 'Gestão avançada de cupons com event listeners que sincronizam descontos para toda a base em tempo real.' 
+  },
+  techRaspberry: { en: 'Raspberry Pi Hack', pt: 'Raspberry Pi Hardware' },
+  techRaspberryDesc: { 
+    en: 'A custom script that auto-connects to speakers and plays the collaborative playlist on power-on.', 
+    pt: 'Script customizado que conecta automaticamente na caixa de som e inicia a playlist ao ligar.' 
+  },
+  techPos: { en: 'PoS & QR Validation', pt: 'PDV & Validação QR' },
+  techPosDesc: { 
+    en: 'A dedicated Point of Sale app for staff to scan and validate customer coupons instantly.', 
+    pt: 'App de Ponto de Venda para funcionários escanearem e validarem cupons dos clientes instantaneamente.' 
+  },
+  techContentful: { en: 'Contentful CMS', pt: 'Contentful CMS' },
+  techContentfulDesc: { 
+    en: 'Centralized content management allowing for easy updates of bar info, menus, and events.', 
+    pt: 'Gerenciamento de conteúdo centralizado permitindo atualizações fáceis de menus e eventos.' 
+  },
 };
 
 interface I18nContextType {

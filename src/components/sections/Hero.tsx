@@ -3,6 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 import { ArrowDownRight, Linkedin, Mail } from 'lucide-react';
 import { Trans } from '@/hooks/useI18n';
+import Link from 'next/link';
 
 export default function Hero() {
   const containerVariants: Variants = {
@@ -57,10 +58,13 @@ export default function Hero() {
           </div>
 
           <motion.div variants={itemVariants} className="mt-4 flex flex-wrap items-center gap-6">
-            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-600 transition-colors hover:text-zinc-400">
+            <Link 
+              href="/projects"
+              className="group flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-600 transition-colors hover:text-zinc-400"
+            >
               <Trans i18nKey="viewProjects" />
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
-            </button>
+            </Link>
 
             <div className="flex items-center gap-4 border-l border-zinc-800 pl-6">
               <a 
