@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
 
           <motion.div variants={itemVariants} className="mt-4 flex flex-wrap items-center gap-6">
-            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-white transition-colors hover:text-zinc-400">
+            <button className="group flex items-center gap-2 text-sm uppercase tracking-widest text-zinc-600 transition-colors hover:text-zinc-400">
               <Trans i18nKey="viewProjects" />
               <ArrowDownRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:translate-y-1" />
             </button>

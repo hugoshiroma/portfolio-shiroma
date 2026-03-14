@@ -10,7 +10,7 @@ export default function JourneyTimeline() {
 
   const experiences = useMemo(() => [
     {
-      year: '2010 - 2012',
+      year: '2011 - 2013',
       title: t('exp1Title'),
       company: 'AOC',
       description: t('exp1Desc'),
@@ -18,7 +18,7 @@ export default function JourneyTimeline() {
       color: 'bg-blue-100 text-blue-600',
     },
     {
-      year: '2012 - 2014',
+      year: '2018 - 2019',
       title: t('exp2Title'),
       company: 'Zellar (Incubada GTP)',
       description: t('exp2Desc'),
@@ -26,7 +26,7 @@ export default function JourneyTimeline() {
       color: 'bg-rose-100 text-rose-600',
     },
     {
-      year: '2015 - 2018',
+      year: '2019 - 2021',
       title: t('exp3Title'),
       company: 'Acesso Soluções de Pagamentos',
       description: t('exp3Desc'),
@@ -34,7 +34,7 @@ export default function JourneyTimeline() {
       color: 'bg-slate-100 text-slate-600',
     },
     {
-      year: 'Hoje',
+      year: '2021 - Hoje',
       title: t('exp4Title'),
       company: 'Méliuz',
       description: t('exp4Desc'),
@@ -44,7 +44,7 @@ export default function JourneyTimeline() {
   ], [t]);
 
   return (
-    <section id="projects" className="py-24 px-6 relative">
+    <section id="journey" className="py-24 px-6 relative">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-col gap-16">
           <motion.div
