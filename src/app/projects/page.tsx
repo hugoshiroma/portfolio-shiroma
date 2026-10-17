@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Trans } from '@/hooks/useI18n';
 import ProjectShowcase from '@/components/sections/ProjectShowcase';
+import MoreProjects from '@/components/sections/MoreProjects';
 
 export default function ProjectsPage() {
   return (
@@ -32,6 +33,9 @@ export default function ProjectsPage() {
 
       {/* Main Project */}
       <ProjectShowcase />
+
+      {/* Other projects */}
+      <MoreProjects />
 
       {/* Footer / Call to action */}
       <section className="py-24 px-6 text-center">

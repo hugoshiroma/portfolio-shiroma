@@ -122,6 +122,38 @@ export const translations: Translations = {
     pt: 'O que começou como uma simples landing page evoluiu para um sistema complexo. Possui uma playlist colaborativa do Spotify onde os clientes podem adicionar músicas, um sistema de gestão de cupons via MedusaJS com sincronização automatizada para toda a base de usuários, e um hack de hardware com Raspberry Pi para reprodução automatizada de áudio.'
   },
   
+  // More projects
+  moreProjectsLabel: { en: 'Selected Work', pt: 'Trabalhos Selecionados' },
+  moreProjectsTitle: { en: 'Local businesses, built to stand out', pt: 'Negócios locais, feitos pra se destacar' },
+  moreProjectsDesc: {
+    en: 'Each one with its own visual identity, information architecture and motion — performant, accessible and SEO/GEO-ready.',
+    pt: 'Cada um com identidade visual, arquitetura de informação e motion próprios — performáticos, acessíveis e prontos pra SEO/GEO.',
+  },
+  vielaTitle: { en: 'Viela Studio', pt: 'Viela Studio' },
+  vielaType: { en: 'E-commerce · Streetwear', pt: 'E-commerce · Streetwear' },
+  vielaDesc: {
+    en: 'Full streetwear store: catalog, cart, Pix checkout, customer accounts and a back-office with an AI assistant, all in a single Next.js app on Supabase.',
+    pt: 'Loja completa de streetwear: catálogo, carrinho, checkout com Pix, área do cliente e back-office com assistente de IA, tudo num único app Next.js com Supabase.',
+  },
+  nonoTitle: { en: 'Boteco do Nono', pt: 'Boteco do Nono' },
+  nonoType: { en: 'Landing · Bar & Restaurant', pt: 'Landing · Bar & Restaurante' },
+  nonoDesc: {
+    en: 'A "bar wall" landing for a two-unit boteco, with a dedicated page and its own LocalBusiness schema for each location.',
+    pt: 'Landing em formato "parede de boteco" para uma casa com duas unidades, cada uma com página e Schema.org LocalBusiness próprios.',
+  },
+  ramagemTitle: { en: 'Ramagem Garden Center', pt: 'Ramagem Garden Center' },
+  ramagemType: { en: 'Catalog · Garden Center', pt: 'Catálogo · Garden Center' },
+  ramagemDesc: {
+    en: 'Navigation lives in a bottom dock that announces the current aisle; products scroll in snap rails and the wishlist travels inside the contact e-mail. Lighthouse 100 in accessibility.',
+    pt: 'A navegação mora numa doca inferior que anuncia o corredor atual; produtos em trilhos com snap e a lista de interesse viaja no e-mail de contato. Lighthouse 100 em acessibilidade.',
+  },
+  florTitle: { en: 'Mel Sítio Boa Florada', pt: 'Mel Sítio Boa Florada' },
+  florType: { en: 'Landing · Artisanal Honey', pt: 'Landing · Mel Artesanal' },
+  florDesc: {
+    en: 'Warm, rural landing page for a small honey producer, with honey-flow animations, hexagon motifs and ordering via WhatsApp.',
+    pt: 'Landing acolhedora e rural para um pequeno produtor de mel, com animações de mel escorrendo, hexágonos e pedido direto pelo WhatsApp.',
+  },
+
   // Tech Highlights
   techSupabase: { en: 'Supabase Edge Functions', pt: 'Supabase Edge Functions' },
   techSupabaseDesc: { 

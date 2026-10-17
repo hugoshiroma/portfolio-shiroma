@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 import { Trans, translations } from '@/hooks/useI18n';
 
+// haules.com.br está fora do ar (domínio não renovado). Quando voltar, é só trocar aqui.
+const HAULES_URL = 'https://haules-landing-page-hugoshiromas-projects.vercel.app';
+
 type I18nKey = keyof typeof translations;
 
 const FeatureCard = ({ 
@@ -85,7 +88,7 @@ export default function ProjectShowcase() {
             viewport={{ once: true }}
             className="flex gap-4"
           >
-            <button onClick={() => window.open('https://haules.com.br', '_blank')} className="flex h-12 items-center gap-2 rounded-full border border-zinc-200 bg-white px-6 text-sm font-bold text-zinc-600 transition-all hover:border-rose-200 hover:text-rose-500">
+            <button onClick={() => window.open(HAULES_URL, '_blank')} className="flex h-12 items-center gap-2 rounded-full border border-zinc-200 bg-white px-6 text-sm font-bold text-zinc-600 transition-all hover:border-rose-200 hover:text-rose-500">
               <Trans i18nKey="liveDemo" /> <ArrowUpRight className="h-4 w-4" />
             </button>
             <button onClick={() => window.open('https://github.com/hugoshiroma/haules-landing-page', '_blank')} className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 text-white transition-all hover:bg-zinc-800">
