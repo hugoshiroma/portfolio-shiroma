@@ -40,7 +40,7 @@ const projects: Project[] = [
     titleKey: 'ramagemTitle',
     typeKey: 'ramagemType',
     descKey: 'ramagemDesc',
-    stack: ['Next.js', 'Static Export', 'Web3Forms', 'Cloudflare Workers'],
+    stack: ['GSAP ScrollTrigger', 'Lenis', 'Three.js', 'Cloudflare Workers'],
   },
   {
     slug: 'mel-boa-florada',

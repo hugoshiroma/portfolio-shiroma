@@ -142,10 +142,10 @@ export const translations: Translations = {
     pt: 'Landing em formato "parede de boteco" para uma casa com duas unidades, cada uma com página e Schema.org LocalBusiness próprios.',
   },
   ramagemTitle: { en: 'Ramagem Garden Center', pt: 'Ramagem Garden Center' },
-  ramagemType: { en: 'Catalog · Garden Center', pt: 'Catálogo · Garden Center' },
+  ramagemType: { en: 'Landing · Garden Center', pt: 'Landing · Garden Center' },
   ramagemDesc: {
-    en: 'Navigation lives in a bottom dock that announces the current aisle; products scroll in snap rails and the wishlist travels inside the contact e-mail. Lighthouse 100 in accessibility.',
-    pt: 'A navegação mora numa doca inferior que anuncia o corredor atual; produtos em trilhos com snap e a lista de interesse viaja no e-mail de contato. Lighthouse 100 em acessibilidade.',
+    en: 'An editorial botanical plate: hand-drawn branches grow and sway as you scroll, photos are pinned like herbarium specimens and a 3D pot blooms from seedling to flower in the hero of the store tour.',
+    pt: 'Uma prancha botânica editorial: galhos desenhados crescem e balançam conforme a rolagem, fotos montadas como espécimes de herbário e um vaso 3D que vai de muda a flor no meio do passeio pela loja.',
   },
   florTitle: { en: 'Mel Sítio Boa Florada', pt: 'Mel Sítio Boa Florada' },
   florType: { en: 'Landing · Artisanal Honey', pt: 'Landing · Mel Artesanal' },
