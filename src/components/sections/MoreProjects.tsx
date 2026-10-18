@@ -51,8 +51,8 @@ const projects: Project[] = [
     stack: ['Next.js', 'Framer Motion', 'Cloudflare Workers'],
   },
   {
-    slug: 'pe-de-moleque',
-    url: 'https://pe-de-moleque.hugo-shiroma.workers.dev',
+    slug: 'nega-maluca',
+    url: 'https://nega-maluca-assistencia-tecnica.hugo-shiroma.workers.dev',
     titleKey: 'pdmTitle',
     typeKey: 'pdmType',
     descKey: 'pdmDesc',

@@ -154,11 +154,11 @@ export const translations: Translations = {
     pt: 'Landing acolhedora e rural para um pequeno produtor de mel, com animações de mel escorrendo, hexágonos e pedido direto pelo WhatsApp.',
   },
 
-  pdmTitle: { en: 'Pé de Moleque', pt: 'Pé de Moleque' },
+  pdmTitle: { en: 'Nêga Maluca', pt: 'Nêga Maluca' },
   pdmType: { en: 'Landing · Phone Repair', pt: 'Landing · Assistência Técnica' },
   pdmDesc: {
-    en: 'Bold, dark landing for a neighborhood phone repair shop: oversized type, a quote request straight to WhatsApp and LocalBusiness schema for local search.',
-    pt: 'Landing escura e direta para uma assistência de celular de bairro: tipografia gigante, orçamento direto no WhatsApp e Schema.org LocalBusiness para busca local.',
+    en: 'Bold, dark landing for a phone repair shop: oversized type, a quote request straight to WhatsApp and LocalBusiness schema for local search.',
+    pt: 'Landing escura e direta para uma assistência técnica de celulares: tipografia gigante, orçamento direto no WhatsApp e Schema.org LocalBusiness para busca local.',
   },
 
   // Tech Highlights
