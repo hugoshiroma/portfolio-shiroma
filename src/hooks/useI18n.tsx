@@ -147,7 +147,7 @@ export const translations: Translations = {
     en: 'An editorial botanical plate: hand-drawn branches grow and sway as you scroll, photos are pinned like herbarium specimens and a 3D pot blooms from seedling to flower in the hero of the store tour.',
     pt: 'Uma prancha botânica editorial: galhos desenhados crescem e balançam conforme a rolagem, fotos montadas como espécimes de herbário e um vaso 3D que vai de muda a flor no meio do passeio pela loja.',
   },
-  florTitle: { en: 'Mel Sítio Boa Florada', pt: 'Mel Sítio Boa Florada' },
+  florTitle: { en: 'Mel Sítio Santa Bárbara', pt: 'Mel Sítio Santa Bárbara' },
   florType: { en: 'Landing · Artisanal Honey', pt: 'Landing · Mel Artesanal' },
   florDesc: {
     en: 'Warm, rural landing page for a small honey producer, with honey-flow animations, hexagon motifs and ordering via WhatsApp.',

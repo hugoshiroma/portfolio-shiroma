@@ -43,8 +43,8 @@ const projects: Project[] = [
     stack: ['GSAP ScrollTrigger', 'Lenis', 'Three.js', 'Cloudflare Workers'],
   },
   {
-    slug: 'mel-boa-florada',
-    url: 'https://mel-boa-florada.hugo-shiroma.workers.dev',
+    slug: 'mel-santa-barbara',
+    url: 'https://mel-sitio-santa-barbara.hugo-shiroma.workers.dev',
     titleKey: 'florTitle',
     typeKey: 'florType',
     descKey: 'florDesc',
