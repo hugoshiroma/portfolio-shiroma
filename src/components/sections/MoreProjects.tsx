@@ -50,6 +50,14 @@ const projects: Project[] = [
     descKey: 'florDesc',
     stack: ['Next.js', 'Framer Motion', 'Cloudflare Workers'],
   },
+  {
+    slug: 'pe-de-moleque',
+    url: 'https://pe-de-moleque.hugo-shiroma.workers.dev',
+    titleKey: 'pdmTitle',
+    typeKey: 'pdmType',
+    descKey: 'pdmDesc',
+    stack: ['Next.js', 'Framer Motion', 'Schema.org', 'Cloudflare Workers'],
+  },
 ];
 
 export default function MoreProjects() {
