@@ -20,7 +20,7 @@ interface Project {
 const projects: Project[] = [
   {
     slug: 'viela-studio',
-    url: 'https://viela-studio.hugo-shiroma.workers.dev',
+    url: 'https://viela-studio.adapt-tec.workers.dev',
     titleKey: 'vielaTitle',
     typeKey: 'vielaType',
     descKey: 'vielaDesc',
@@ -28,7 +28,7 @@ const projects: Project[] = [
   },
   {
     slug: 'boteco-do-nono',
-    url: 'https://boteco-do-nono.hugo-shiroma.workers.dev',
+    url: 'https://boteco-do-nono.adapt-tec.workers.dev',
     titleKey: 'nonoTitle',
     typeKey: 'nonoType',
     descKey: 'nonoDesc',
@@ -36,7 +36,7 @@ const projects: Project[] = [
   },
   {
     slug: 'ramagem-garden',
-    url: 'https://ramagem-garden.hugo-shiroma.workers.dev',
+    url: 'https://ramagem-garden.adapt-tec.workers.dev',
     titleKey: 'ramagemTitle',
     typeKey: 'ramagemType',
     descKey: 'ramagemDesc',
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     slug: 'mel-santa-barbara',
-    url: 'https://mel-sitio-santa-barbara.hugo-shiroma.workers.dev',
+    url: 'https://mel-sitio-santa-barbara.adapt-tec.workers.dev',
     titleKey: 'florTitle',
     typeKey: 'florType',
     descKey: 'florDesc',
@@ -52,7 +52,7 @@ const projects: Project[] = [
   },
   {
     slug: 'nega-maluca',
-    url: 'https://nega-maluca-assistencia-tecnica.hugo-shiroma.workers.dev',
+    url: 'https://nega-maluca-assistencia-tecnica.adapt-tec.workers.dev',
     titleKey: 'pdmTitle',
     typeKey: 'pdmType',
     descKey: 'pdmDesc',
